@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#f4f6f8}
+nav{display:flex;justify-content:space-between;padding:12px 5%;background:#111;color:#fff;position:sticky;top:0}
+nav a{color:#fff;text-decoration:none;margin-left:10px;transition:.3s}
+nav a:hover{color:#00ffcc;transform:scale(1.1)}
+.hero{text-align:center;padding:40px 10px;background:linear-gradient(135deg,#000428,#004e92);color:#fff;animation:fade 1s}
+.hero img{width:90px;border-radius:50%;border:3px solid #0ff;animation:float 3s infinite}
+.card{background:#fff;margin:10px 5%;padding:14px;border-radius:10px;box-shadow:0 2px 6px #ccc}
+.card h2{color:#004e92;border-left:4px solid #0ff;padding-left:6px;margin:8px 0;font-size:16px}
+.grid{ display:grid;grid-template-columns:repeat(4,1fr);gap:6px }
+.grid div{background:#111;color:#0ff;padding:7px;text-align:center;border-radius:5px;font-size:12px;transition:.3s}
+.grid div:hover{background:#0ff;color:#111;transform:translateY(-3px)}
+.p{ display:grid;grid-template-columns:repeat(3,1fr);gap:6px }
+.p div{background:#eef;padding:8px;border-radius:6px;font-size:12px;border-left:3px solid #0ff}
+.btn{background:#0ff;color:#000;padding:6px 14px;border-radius:15px;text-decoration:none;font-weight:bold;display:inline-block;margin-top:6px}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1}}
+@media(max-width:600px){.grid{grid-template-columns:repeat(2,1fr)}.p{grid-template-columns:1fr}nav{flex-direction:column;text-align:center}}
+</style>
+</head>
+<body>
+<nav>
+    <b>MY PORTFOLIO</b>
+    <div>
+        <a href="#">Profile</a>
+        <a href="#">Skills</a>
+    </div>
+</nav>
+
+<div class="hero">
+<img src="c:\Users\mahal\Downloads\WhatsApp Image 2026-10-24 at 11.22.35 AM.jpeg">
+<h1>mahalakshmi - B.Tech AIML</h1>
+<p>Profile: Web Developer | amalapuram | Passionate Coder</p>
+<a href="#" class="btn">Download Resume</a>
+</div>
+
+<div class="card">
+<h2>Educational Qualifications</h2>
+<p>B.Tech AIML - 8.5 CGPA (2026-30) | Intermediate - 92% | SSC - 9.5 GPA</p>
+<h2>Hobbies</h2><p> Readind,Coding, Cricket, Music, Traveling</p>
+ </div>
+ <div class="card">
+<h2>Technical Skills</h2>
+<div class="grid">
+    <div>HTML</div>
+    <div>python</div>
+    </div>
+<div class="card" style="background:#111;color:#fff">
+<h2 style="color:#0ff">Resume & Contact Information</h2>
+<p>Email: mahalakshmi@gmail.com | Phone: 9876543210<br>LinkedIn | GitHub | Location: Amalapuram, AP</p>
+<a href="#" class="btn">Resume PDF</a> <a href="#" class="btn" style="background:#fff">Contact Me</a>
+</div>
+</body>
+</html>
