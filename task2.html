@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#fff7f0}
+nav{display:flex;justify-content:space-between;padding:10px 5%;background:#ff2e63;color:#fff;position:sticky;top:0;z-index:9}
+.rest{background:linear-gradient(#0007,#0007),url('https://picsum.photos/800/220?food');background-size:cover;color:#fff;padding:20px 5%}
+.rest span{background:gold;color:#000;padding:2px 7px;border-radius:4px;font-size:11px;font-weight:bold}
+.cat{padding:8px 5%;display:flex;gap:6px;overflow:auto}
+.cat b{border:1px solid #ff2e63;padding:5px 10px;border-radius:15px;font-size:11px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:10px 5%}
+.card{background:#fff;border-radius:10px;box-shadow:0 2px 6px #ccc;overflow:hidden}
+.card img{width:100%;height:110px;object-fit:cover}
+.i{padding:7px}
+.price{font-weight:bold}.off{color:green;font-size:11px}
+.rev{font-size:11px;color:#ff9800}
+button{width:48%;padding:6px;border:none;border-radius:5px;font-weight:bold;cursor:pointer;margin-top:4px}
+.add{background:#ffe0e9;color:#ff2e63;border:1px solid #ff2e63}.order{background:#ff2e63;color:#fff}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav><b>FoodMania 🍕</b>
+    <div>Menu | Cart 🛒 (2)</div>
+</nav>
+
+<div class="rest">
+<h2>Paradise Biryani - vijayawada</h2>
+<p>⭐ 4.5 (1200+ Reviews) | 25 mins Delivery | Free Delivery</p>
+<p>Special Offer: <span>50% OFF upto ₹100 | WELCOME50</span></p>
+<p style="font-size:12px;margin-top:4px">📍 bus stand Road, vijayawada | 🕒 Open 11AM-11PM</p>
+</div>
+
+<div class="cat">
+    <b>All</b>
+    <b>Pizza</b>
+    <b>cold coffe</b>
+    <b>rice combo</b>
+    </div>
+    <div class="grid">
+<div class="card">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/047/734/497/small/enjoy-the-delicious-flavors-of-a-vegetarian-pizza-with-fresh-tomatoes-onions-and-green-peas-on-a-crispy-crust-from-a-nearby-pizzeria-add-basil-herbs-parsley-and-spices-for-an-extra-kick-photo.jpg">
+    <div class="i">
+        <h4> veg cheese pizza</h4>
+        <p style="font-size:11px;color:#666"> inch,cheese,Burst</p>
+            <p class="price">₹299 <span class="off">25% OFF</span></p>
+            <p class="rev">⭐4.6 | 1.1k Reviews - "Tasty & Spicy"</p>
+            <button class="add">Add</button>
+            <button class="order">Order</button>
+        </div>
+</div>
+
+<div class="card">
+    <img src="https://www.cookwithmanali.com/wp-content/uploads/2022/04/Cold-Coffee-Recipe-676x1024.jpg">
+    <div class="i">
+        <h2>Cold Coffee</h4>
+            <p style="font-size:11px;color:#666">Choco + Ice Cream</p>
+            <p class="price">₹99 <span class="off">Best Seller</span></p>
+            <p class="rev">⭐4.8 | 400 Reviews</p>
+            <button class="add">Add</button>
+            <button class="order">Order</button>
+        </div>
+    </div>
+<div class="card">
+    <img src="https://img.magnific.com/free-photo/indian-style-chicken-paneer-curry-with-rice-fresh-herbs_84443-87496.jpg?semt=ais_hybrid&w=740&q=80">
+    <div class="i">
+        <h3> Rice Combo</h4>
+            <p style="font-size:11px;color:#666">Veg + Manchurian</p>
+            <p class="price">₹249 <span class="off">₹100 OFF</span></p>
+            <p class="rev">⭐4.2 | 610 Reviews</p>
+            <button class="add">Add</button>
+            <button class="order">Order</button>
+        </div>
+    </div>
+</body>
+</html>
